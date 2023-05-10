@@ -1,16 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { Login } from './screens/Login';
+import { Confirm } from './screens/Confirm';
+import Home from './screens/Home';
+import UserState from './context/User/UserState.js';
+
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Los 15 de Pili
-        </p>
-      </header>
-    </div>
+    <UserState>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<Login />} />
+        <Route path="confirm" element={<Confirm />} />
+      </Routes>
+    </UserState>
   );
 }
 
