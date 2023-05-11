@@ -111,7 +111,7 @@ function MainFeaturedPost(props) {
                     </Typography>
                   </CardContent>
                 </Card>
-                <Card sx={{ width: 60, mr: 1, height: 50 }}>
+                <Card sx={{ width: 65, mr: 1, height: 50 }}>
                   <CardContent sx={{ paddingTop: 0, paddingBottom: 0, marginBottom: -2.7 }}>
                     <Typography variant="h5" component="div" sx={{ mb: -1 }}>
                       {time.hours}
