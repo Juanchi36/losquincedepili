@@ -60,7 +60,7 @@ function FeaturedPost(props) {
             </ThemeProvider>
             <div style={{ marginLeft: 15 }}>
               <ThemeProvider theme={theme2}>
-                <Typography component="h2" variant="subtitle2" sx={{ mb: 1, lineHeight: 1.2 }}>
+                <Typography component="h2" variant="subtitle1" sx={{ mb: 1, lineHeight: 1.4 }}>
                   {post.description}
                 </Typography>
               </ThemeProvider>

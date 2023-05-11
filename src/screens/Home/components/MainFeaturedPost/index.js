@@ -168,15 +168,14 @@ function MainFeaturedPost(props) {
                 variant="h5"
                 color="inherit"
                 className="font-link"
-                // sx={{ mt: -5}}
               >
                 Dress Code: Elegante
               </Typography>
-              <Typography variant="h3" color="inherit" paragraph sx={{ pt: 20 }}>
+              <Typography variant="h3" color="inherit" paragraph sx={{ pt: 15 }}>
                 {post.description}
               </Typography>
               <Typography variant="h6" color="inherit" sx={{ mb: 1 }}>
-                Confirmar asistencia antes del 5 de junio
+                Confirmar antes del 5 de junio
               </Typography>
               <Button
                 variant="contained"
