@@ -64,19 +64,19 @@ function FeaturedPost(props) {
                   {post.description}
                 </Typography>
               </ThemeProvider>
-              <Typography variant="h5" color="text.secondary">
+              <Typography variant="h4" color="text.secondary">
                 {post.name}
               </Typography>
               <ThemeProvider theme={theme2}>
-                <Typography variant="subtitle1">{post.address}</Typography>
-                <Typography variant="subtitle1">{post.address2}</Typography>
+                <Typography variant="h6">{post.address}</Typography>
+                <Typography variant="h6">{post.address2}</Typography>
               </ThemeProvider>
               <ThemeProvider theme={theme2}>
                 {post.linkText && (
                   <div
                   // onClick={() => setIsModalVisible(true)}
                   >
-                    <Typography variant="subtitle1" color="#ababab">
+                    <Typography variant="h6" color="#ababab">
                       {post.linkText}
                     </Typography>
                   </div>

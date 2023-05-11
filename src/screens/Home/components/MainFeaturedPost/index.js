@@ -95,7 +95,7 @@ function MainFeaturedPost(props) {
                 pr: { md: 0 },
               }}
             >
-              {time.hours > 0 && <Box
+              <Box
                 sx={{
                   display: 'inline-flex',
                   mb: 1,
@@ -103,20 +103,20 @@ function MainFeaturedPost(props) {
               >
                 <Card sx={{ width: 60, mr: 1, height: 50, backgroundColor: '#000' }}>
                   <CardContent sx={{ paddingTop: 0, paddingBottom: 0, marginBottom: -2.7 }}>
-                    <Typography variant="h6" component="div" sx={{ mb: -1 }} color="white">
+                    <Typography variant="h5" component="div" sx={{ mb: -1 }} color="white">
                       {time.days}
                     </Typography>
-                    <Typography sx={{ fontSize: 14 }} color="white">
+                    <Typography sx={{ fontSize: 16, fontWeight: '700' }} color="white">
                       Días
                     </Typography>
                   </CardContent>
                 </Card>
                 <Card sx={{ width: 60, mr: 1, height: 50 }}>
                   <CardContent sx={{ paddingTop: 0, paddingBottom: 0, marginBottom: -2.7 }}>
-                    <Typography variant="h6" component="div" sx={{ mb: -1 }}>
+                    <Typography variant="h5" component="div" sx={{ mb: -1 }}>
                       {time.hours}
                     </Typography>
-                    <Typography sx={{ fontSize: 14, ml: -0.5 }} color="text.secondary">
+                    <Typography sx={{ fontSize: 16, ml: -0.5, fontWeight: '700' }} color="text.secondary">
                       Horas
                     </Typography>
                   </CardContent>
@@ -126,25 +126,25 @@ function MainFeaturedPost(props) {
                   onClick={createUser}
                 >
                   <CardContent sx={{ paddingTop: 0, paddingBottom: 0, marginBottom: -2.7 }}>
-                    <Typography variant="h6" component="div" sx={{ mb: -1 }} color="white">
+                    <Typography variant="h5" component="div" sx={{ mb: -1 }} color="white">
                       {time.minutes}
                     </Typography>
-                    <Typography sx={{ fontSize: 14 }} color="white">
+                    <Typography sx={{ fontSize: 16, fontWeight: '700' }} color="white">
                       Min.
                     </Typography>
                   </CardContent>
                 </Card>
                 <Card sx={{ width: 60, height: 50 }} onClick={crypt}>
                   <CardContent sx={{ paddingTop: 0, paddingBottom: 0, marginBottom: -2.7 }}>
-                    <Typography variant="h6" component="div" sx={{ mb: -1 }}>
+                    <Typography variant="h5" component="div" sx={{ mb: -1 }}>
                       {time.seconds}
                     </Typography>
-                    <Typography sx={{ fontSize: 14 }} color="text.secondary">
+                    <Typography sx={{ fontSize: 16, fontWeight: '700' }} color="text.secondary">
                       Seg.
                     </Typography>
                   </CardContent>
                 </Card>
-              </Box>}
+              </Box>
               <Typography
                 component="h1"
                 variant="h1"
@@ -156,30 +156,42 @@ function MainFeaturedPost(props) {
               </Typography>
               <Typography
                 component="h1"
-                variant="h6"
+                variant="h5"
                 color="inherit"
                 className="font-link"
-                sx={{ mt: -5}}
+                sx={{ mt: -5 }}
               >
-                19 de junio de 2023 - save the date
+                19 de junio de 2023
               </Typography>
-              <Typography variant="h4" color="inherit" paragraph sx={{ pt: 30 }}>
+              <Typography
+                component="h1"
+                variant="h5"
+                color="inherit"
+                className="font-link"
+                // sx={{ mt: -5}}
+              >
+                Dress Code: Elegante
+              </Typography>
+              <Typography variant="h3" color="inherit" paragraph sx={{ pt: 20 }}>
                 {post.description}
               </Typography>
-              <Typography variant="h6" color="inherit" >
+              <Typography variant="h6" color="inherit" sx={{ mb: 1 }}>
                 Confirmar asistencia antes del 5 de junio
               </Typography>
               <Button
                 variant="contained"
-                size="small"
+                size="medium"
                 onClick={() => navigate('/login')}
                 color="gold"
               >
                 <ThemeProvider theme={theme2}>
-                  <Typography sx={{ fontWeight: 500, fontSize: 24, textTransform: 'none' }} color="#000">
+                  <Typography
+                    sx={{ fontWeight: 500, fontSize: 26, textTransform: 'none' }}
+                    color="#000"
+                  >
                     Confirmar Asistencia
                   </Typography>
-                <TouchAppIcon color='neutral'/>
+                  <TouchAppIcon color="neutral" />
                 </ThemeProvider>
               </Button>
             </Box>

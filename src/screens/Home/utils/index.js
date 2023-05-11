@@ -10,6 +10,15 @@ export function timeLeft() {
   const hours = Math.floor((remainingTime / (1000 * 60 * 60)) % 24);
   const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
 
+  if (seconds < 0) {
+    return {
+      days: '00',
+      hours: '00',
+      minutes: '00',
+      seconds: '00',
+    };
+  }
+
   return {
     days: days <= 9 ? `0${days}` : days,
     hours: hours <= 9 ? `0${hours}` : hours,

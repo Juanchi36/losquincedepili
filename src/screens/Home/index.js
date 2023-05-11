@@ -23,7 +23,7 @@ const featuredPosts = [
     title: '¿Dónde y cuándo?',
     description: '',
     address: 'Perú 338, CABA',
-    address2: '19/06/23',
+    address2: '19/06/23 - de 21:00 a 05:00',
     image:
     janosImage,
     imageLabel: 'place picture',
